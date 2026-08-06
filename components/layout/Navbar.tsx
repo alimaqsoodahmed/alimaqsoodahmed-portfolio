@@ -1,59 +1,59 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const links = [
-  "Home",
-  "About",
-  "Skills",
-  "Projects",
-  "Research",
-  "GitHub",
-  "Contact",
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Research", href: "#research" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 20);
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", onScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "backdrop-blur-xl bg-black/50 border-b border-white/10"
-          : "bg-transparent"
+          ? "bg-[#07070a]/95 backdrop-blur-xl border-b border-white/10 shadow-lg"
+          : "bg-[#07070a]/80 backdrop-blur-md"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-        <h1 className="text-2xl font-black">
-          Muhammad{" "}
-          <span className="text-indigo-400">Ali</span>
-        </h1>
+      <nav className="max-w-7xl mx-auto h-20 flex items-center justify-between px-6">
 
-        <ul className="hidden md:flex gap-10">
+        {/* Logo */}
 
-          {links.map((item) => (
+        <a
+          href="#home"
+          className="text-2xl font-black text-white hover:text-indigo-400 transition"
+        >
+          Muhammad <span className="text-indigo-500">Ali</span>
+        </a>
 
-            <li key={item}>
+        {/* Navigation */}
 
+        <ul className="hidden md:flex items-center gap-8">
+
+          {links.map((link) => (
+            <li key={link.name}>
               <a
-                href={`#${item.toLowerCase()}`}
-                className="text-gray-300 hover:text-white transition"
+                href={link.href}
+                className="text-gray-300 hover:text-indigo-400 transition duration-300"
               >
-                {item}
+                {link.name}
               </a>
-
             </li>
-
           ))}
 
         </ul>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Aurora from "@/components/ui/Aurora";
+import Navbar from "@/components/layout/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,10 +14,61 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Muhammad Ali | AI Researcher",
+export const metadata = {
+  title: "Muhammad Ali | AI Researcher & Machine Learning Engineer",
+
   description:
-    "AI Researcher, Machine Learning Engineer, LLM Developer, and Computer Vision Enthusiast.",
+    "Portfolio of Muhammad Ali — AI Researcher specializing in Machine Learning, Deep Learning, Large Language Models, Computer Vision, and Intelligent Home Energy Management Systems.",
+
+  keywords: [
+    "Muhammad Ali",
+    "AI Researcher",
+    "Machine Learning",
+    "Deep Learning",
+    "LLM",
+    "Computer Vision",
+    "Artificial Intelligence",
+    "Python",
+    "TensorFlow",
+    "PyTorch",
+    "Next.js",
+  ],
+
+  authors: [{ name: "Muhammad Ali" }],
+
+  creator: "Muhammad Ali",
+
+  openGraph: {
+    title: "Muhammad Ali | AI Researcher",
+    description:
+      "AI Researcher • Machine Learning Engineer • LLM Developer",
+
+    url: "https://alimaqsoodahmed-portfolio.vercel.app",
+
+    siteName: "Muhammad Ali Portfolio",
+
+    images: [
+      {
+        url: "/profile.png",
+        width: 800,
+        height: 800,
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Muhammad Ali | AI Researcher",
+
+    description:
+      "AI Researcher • Machine Learning Engineer • LLM Developer",
+
+    images: ["/profile.png"],
+  },
 };
 
 export default function RootLayout({
@@ -25,9 +78,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+
+  <Aurora />
+
+  <Navbar />
+
+  {children}
+
+</body>
     </html>
   );
 }

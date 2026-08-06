@@ -26,13 +26,18 @@ html{
 
 body{
 
-  background:var(--background);
+  body{
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+}
 
-  color:var(--foreground);
+html{
+    scroll-behavior:smooth;
+}
 
-  font-family:var(--font-geist-sans);
-
-  overflow-x:hidden;
+  
+  
 }
 
 a{

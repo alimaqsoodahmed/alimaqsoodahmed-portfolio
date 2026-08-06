@@ -12,7 +12,6 @@ import Background from "@/components/ui/Background";
 export default function Home() {
   return (
     <main className="bg-[#07070a] text-white">
-      <Navbar />
       <Hero />
       <About />
       <Skills />
