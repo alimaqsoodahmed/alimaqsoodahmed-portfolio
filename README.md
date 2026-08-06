@@ -1,99 +1,170 @@
-# Muhammad Ali - AI Portfolio Website
+<div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![React](https://img.shields.io/badge/React-19-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC)
-![License](https://img.shields.io/badge/License-MIT-green)
+# 👋 Muhammad Ali
 
-A modern AI Portfolio built with **Next.js 16**, **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
+### AI Researcher • Machine Learning Engineer • LLM Developer • Computer Vision Engineer
 
-This portfolio showcases my research, AI projects, machine learning work, publications, skills, and professional experience.
+Building intelligent systems with Machine Learning, Deep Learning, Computer Vision, Time-Series Forecasting and Large Language Models.
 
----
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-6366F1?style=for-the-badge)](https://alimaqsoodahmed-portfolio.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-alimaqsoodahmed-black?style=for-the-badge&logo=github)](https://github.com/alimaqsoodahmed)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Ali-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/muhammad-ali-76b938182)
 
-# Live Website
-
-https://alimaqsoodahmed-portfolio.vercel.app
+</div>
 
 ---
 
-# GitHub Repository
+# 🚀 Live Demo
 
-https://github.com/alimaqsoodahmed/alimaqsoodahmed-portfolio
+🌐 **Portfolio**
+
+> https://alimaqsoodahmed-portfolio.vercel.app
 
 ---
 
-# Tech Stack
+# 📷 Preview
+
+> Add screenshots later.
+
+```
+public/
+   screenshots/
+      home.png
+      projects.png
+      contact.png
+```
+
+Then use
+
+```md
+![Home](public/screenshots/home.png)
+```
+
+---
+
+# 📌 About
+
+This repository contains my personal AI portfolio built using **Next.js 16**, **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
+
+The website showcases
+
+- 🤖 Artificial Intelligence Projects
+- 🧠 Machine Learning
+- 📈 Time-Series Forecasting
+- 💬 Large Language Models
+- 👁 Computer Vision
+- 📚 Research
+- 💼 Professional Experience
+- 📄 Resume
+- 📫 Contact Information
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
 
 - Next.js 16
-- React
+- React 19
 - TypeScript
 - Tailwind CSS
 - Framer Motion
 - React Icons
-- Lucide Icons
 
 ---
 
-# Project Structure
+## AI / Machine Learning
 
-```
+- Python
+- TensorFlow
+- PyTorch
+- Scikit-Learn
+- OpenCV
+- Pandas
+- NumPy
+
+---
+
+## Backend
+
+- FastAPI
+- Flask
+- Django
+- REST API
+
+---
+
+## Databases
+
+- MySQL
+- MongoDB
+
+---
+
+## Cloud & DevOps
+
+- AWS
+- Azure
+- Google Cloud
+- Docker
+- Git
+- GitHub
+
+---
+
+# 📂 Folder Structure
+
+```text
 alimaqsoodahmed-portfolio/
 
+app/
 │
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── loading.tsx
+├── layout.tsx
+├── page.tsx
+├── globals.css
 │
-├── components/
+components/
 │
-│   ├── layout/
-│   │      Navbar.tsx
-│   │      Footer.tsx
-│   │
-│   ├── sections/
-│   │      Hero.tsx
-│   │      About.tsx
-│   │      Skills.tsx
-│   │      Projects.tsx
-│   │      Research.tsx
-│   │      Github.tsx
-│   │      Contact.tsx
-│   │
-│   └── ui/
-│          Aurora.tsx
-│          Background.tsx
-│          Counter.tsx
+├── layout/
+│      Navbar.tsx
+│      Footer.tsx
 │
-├── data/
-│      personal.ts
-│      projects.ts
+├── sections/
+│      Hero.tsx
+│      About.tsx
+│      Skills.tsx
+│      Projects.tsx
+│      Research.tsx
+│      Github.tsx
+│      Contact.tsx
 │
-├── public/
-│      profile.png
-│
-│      resume/
-│          Muhammad_Ali_CV.pdf
-│
-│      projects/
-│          hems.png
-│          yolo.png
-│          rag.png
-│
-├── styles/
-│      theme.ts
-│
-├── package.json
-├── tsconfig.json
-└── README.md
+└── ui/
+       Aurora.tsx
+       Background.tsx
+       Counter.tsx
+
+data/
+
+personal.ts
+
+projects.ts
+
+public/
+
+profile.png
+
+resume/
+
+Muhammad_Ali_CV.pdf
+
+projects/
+
+styles/
 ```
 
 ---
 
-# Installation
+# ⚙ Installation
 
 Clone repository
 
@@ -101,19 +172,19 @@ Clone repository
 git clone https://github.com/alimaqsoodahmed/alimaqsoodahmed-portfolio.git
 ```
 
-Open project
+Open folder
 
 ```bash
 cd alimaqsoodahmed-portfolio
 ```
 
-Install packages
+Install dependencies
 
 ```bash
 npm install
 ```
 
-Start development server
+Run development server
 
 ```bash
 npm run dev
@@ -127,49 +198,31 @@ http://localhost:3000
 
 ---
 
-# Build Project
+# 🏗 Production Build
 
-Always verify before pushing.
+Always test before pushing.
 
 ```bash
 npm run build
 ```
 
-If the build finishes successfully, the project is ready to deploy.
-
 ---
 
-# Git Workflow
+# 🚀 Deployment
 
-Check status
+Hosted on
 
-```bash
-git status
-```
+- Vercel
 
-Stage changes
-
-```bash
-git add .
-```
-
-Commit
-
-```bash
-git commit -m "Describe your changes"
-```
-
-Push
+Deployment happens automatically after
 
 ```bash
 git push origin main
 ```
 
-Vercel automatically deploys every push to the **main** branch.
-
 ---
 
-# Editing the Portfolio
+# 📖 Editing Guide
 
 ## Hero Section
 
@@ -177,29 +230,28 @@ Vercel automatically deploys every push to the **main** branch.
 components/sections/Hero.tsx
 ```
 
-Update:
+Edit
 
 - Name
-- Typing animation
-- Introduction
+- Title
+- Typing Animation
 - Buttons
+- Social Links
 - Statistics
-- Social links
 
 ---
 
-## About Section
+## About
 
 ```
 components/sections/About.tsx
 ```
 
-Update:
+Update
 
 - Education
 - Experience
-- Timeline
-- Biography
+- Bio
 
 ---
 
@@ -209,7 +261,12 @@ Update:
 components/sections/Skills.tsx
 ```
 
-Add or remove technologies.
+Add
+
+- Languages
+- Frameworks
+- Libraries
+- Cloud Platforms
 
 ---
 
@@ -223,13 +280,13 @@ Example
 
 ```ts
 {
- title:"Project",
- description:"Description",
- tech:["Python","TensorFlow","FastAPI"]
+title:"AI Project",
+
+description:"Project Description",
+
+tech:["Python","TensorFlow","FastAPI"]
 }
 ```
-
-Projects update automatically.
 
 ---
 
@@ -239,11 +296,12 @@ Projects update automatically.
 components/sections/Research.tsx
 ```
 
-Add
+Update
 
 - Publications
+
 - Thesis
-- Journal papers
+
 - Conferences
 
 ---
@@ -257,44 +315,19 @@ components/sections/Contact.tsx
 Update
 
 - Email
-- Phone
-- GitHub
+
 - LinkedIn
 
----
-
-## Navbar
-
-```
-components/layout/Navbar.tsx
-```
-
-Update navigation links.
+- GitHub
 
 ---
 
-## Footer
+# 🖼 Images
 
-```
-components/layout/Footer.tsx
-```
-
-Update copyright and links.
-
----
-
-# Images
-
-Profile image
+Profile
 
 ```
 public/profile.png
-```
-
-Project images
-
-```
-public/projects/
 ```
 
 Resume
@@ -303,118 +336,55 @@ Resume
 public/resume/Muhammad_Ali_CV.pdf
 ```
 
----
-
-# Colors
-
-Tailwind classes
+Projects
 
 ```
-text-indigo-500
-
-text-gray-400
-
-bg-black
-
-bg-white
-
-bg-indigo-600
+public/projects/
 ```
 
 ---
 
-# Fonts
+# 💻 Useful Commands
 
-Configured in
-
-```
-app/layout.tsx
-```
-
-Uses
-
-- Geist Sans
-- Geist Mono
-
----
-
-# Animations
-
-Library
-
-```
-Framer Motion
-```
-
-Used in
-
-- Hero
-- About
-- Skills
-- Projects
-- Timeline
-
----
-
-# Counter Component
-
-```
-components/ui/Counter.tsx
-```
-
-Usage
-
-```tsx
-<Counter end={25} />
-```
-
----
-
-# Aurora Background
-
-```
-components/ui/Aurora.tsx
-```
-
-Included inside
-
-```
-app/layout.tsx
-```
-
----
-
-# Useful Commands
-
-Run development server
+Development
 
 ```bash
 npm run dev
 ```
 
-Production build
+Build
 
 ```bash
 npm run build
 ```
 
-Install packages
+Install package
 
 ```bash
-npm install
+npm install package-name
 ```
 
-Update packages
+Git Status
 
 ```bash
-npm update
+git status
+```
+
+Commit
+
+```bash
+git add .
+
+git commit -m "message"
+
+git push origin main
 ```
 
 ---
 
-# Common Fixes
+# 🐞 Common Fixes
 
-## Delete cache
+Delete cache
 
 Windows
 
@@ -422,15 +392,13 @@ Windows
 rmdir /s /q .next
 ```
 
-Linux/macOS
+Linux
 
 ```bash
 rm -rf .next
 ```
 
----
-
-## Install missing package
+Install missing packages
 
 ```bash
 npm install react-icons
@@ -442,117 +410,82 @@ npm install lucide-react
 
 ---
 
-## View Git History
+# 📈 Current Features
 
-```bash
-git log --oneline
-```
+✅ Responsive Design
 
----
+✅ Modern Hero Section
 
-## Latest Commit
+✅ Animated Counters
 
-```bash
-git log -1
-```
+✅ Aurora Background
 
----
+✅ AI Projects
 
-# Deployment
+✅ Research Section
 
-Hosting
+✅ Skills Section
 
-- Vercel
+✅ Resume Download
 
-Deployment
+✅ Contact Section
 
-Automatic after every push to GitHub.
+✅ GitHub Section
 
 ---
 
-# Future Roadmap
+# 🚧 Future Improvements
 
-- AI Chat Assistant
+- AI Chatbot
 - Blog
-- Certificates Section
-- GitHub Contribution Graph
+- Certificates
+- Publications Page
 - Project Detail Pages
-- Visitor Analytics
+- GitHub Contribution Graph
 - EmailJS Contact Form
-- Dark/Light Theme
+- Visitor Analytics
+- Dark / Light Mode
 - SEO Optimization
-- CMS Support
+- Admin Dashboard
 
 ---
 
-# Workflow Checklist
+# 🤝 Contributing
 
-Whenever making changes:
+Contributions, issues, and feature requests are welcome.
 
-✅ Edit code
-
-↓
-
-✅ Run
-
-```bash
-npm run dev
-```
-
-↓
-
-✅ Test website
-
-↓
-
-✅ Build
-
-```bash
-npm run build
-```
-
-↓
-
-✅ Commit
-
-```bash
-git add .
-git commit -m "Describe changes"
-git push origin main
-```
-
-↓
-
-✅ Wait for Vercel Deployment
-
-↓
-
-✅ Verify Live Website
+Feel free to fork this repository and create a pull request.
 
 ---
 
-# Author
+# 📬 Contact
 
 **Muhammad Ali**
 
-AI Researcher
-
-Machine Learning Engineer
-
-LLM Developer
-
-GitHub
-
-https://github.com/alimaqsoodahmed
-
-LinkedIn
-
-https://linkedin.com/in/muhammad-ali-76b938182
-
-Email
+📧 Email
 
 malipallandri@gmail.com
 
+🔗 LinkedIn
+
+https://linkedin.com/in/muhammad-ali-76b938182
+
+💻 GitHub
+
+https://github.com/alimaqsoodahmed
+
+🌐 Portfolio
+
+https://alimaqsoodahmed-portfolio.vercel.app
+
 ---
 
-© 2026 Muhammad Ali. All Rights Reserved.
+<div align="center">
+
+### ⭐ If you like this project, consider giving it a Star ⭐
+
+Made with ❤️ using Next.js + TypeScript + Tailwind CSS
+
+© 2026 Muhammad Ali
+
+</div>
